@@ -6,7 +6,7 @@ import pickle
 import numpy as np
 import random
 
-ignore_words = ['?', '!',',','.', "'s", "'m"]
+
 
 # Biblioteca load_model
 import tensorflow
@@ -58,11 +58,4 @@ def bot_response(user_input):
         return bot_response
 
 print("Oi, eu sou a Estela, como posso ajudar?")
-
-while True:
-    user_input = input("Digite sua mensagem aqui:")
-    print("Entrada do Usuário: ", user_input)
-
-    response = bot_response(user_input)
-    print("Resposta do Robô: ", response)
 
